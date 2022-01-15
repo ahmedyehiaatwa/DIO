@@ -11,18 +11,18 @@
 
 void LED0_Init(void)
 {
-	DIO_SetPinDir(DIO_PORTC, DIO_PIN2, DIO_PIN_OUTPUT);
+	DIO_SetPinDir(DIO_PORTB, DIO_PIN4, DIO_PIN_OUTPUT);
 }
 
 void LED0_On(void)
 {
-	DIO_SetPinValue(DIO_PORTC, DIO_PIN2 , DIO_PIN_HIGH);
+	DIO_SetPinValue(DIO_PORTB, DIO_PIN4 , DIO_PIN_HIGH);
 }
 void LED0_Off(void)
 {
-	DIO_SetPinValue(DIO_PORTC, DIO_PIN2 , DIO_PIN_LOW);
+	DIO_SetPinValue(DIO_PORTB, DIO_PIN4 , DIO_PIN_LOW);
 }
 void LED0_Toggle(void)
 {
-	DIO_TogglePin(DIO_PORTC, DIO_PIN2);
+	DIO_TogglePin(DIO_PORTB, DIO_PIN4);
 }
